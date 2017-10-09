@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+<typeInfo handle="=Interfaceses/src&lt;template{FatoryInterface.java[FatoryInterface" modifiers="513" timestamp="1420603173645"/>
+<typeInfo handle="=Interfaceses/src&lt;template{LoginInterface.java[LoginInterface" modifiers="513" timestamp="1420603227214"/>
+<typeInfo handle="=Interfaceses/src&lt;template{CreateInterface.java[CreateInterface" modifiers="513" timestamp="1420603274681"/>
+<typeInfo handle="=Interfaceses/src&lt;template{LogoutInterface.java[LogoutInterface" modifiers="513" timestamp="1420705657756"/>
+<typeInfo handle="=CloudServer/C:\/Program Files\/Java\/jdk1.8.0\/jre\/lib\/rt.jar&lt;java.io(InputStream.class[InputStream" modifiers="1057" timestamp="1419844503949"/>
+<typeInfo handle="=CloudServer/C:\/Program Files\/Java\/jdk1.8.0\/jre\/lib\/rt.jar&lt;java.io(OutputStream.class[OutputStream" modifiers="1057" timestamp="1419844503949"/>
+<typeInfo handle="=CloudServer/C:\/Program Files\/Java\/jdk1.8.0\/jre\/lib\/rt.jar&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1419844503949"/>
+<typeInfo handle="=Interfaceses/C:\/Program Files\/Java\/jdk1.8.0\/jre\/lib\/rt.jar&lt;java.rmi(Remote.class[Remote" modifiers="1537" timestamp="1419844503949"/>
+<typeInfo handle="=Interfaceses/src&lt;template{UploadInterface.java[UploadInterface" modifiers="513" timestamp="1420721277301"/>
+</typeInfoHistroy>

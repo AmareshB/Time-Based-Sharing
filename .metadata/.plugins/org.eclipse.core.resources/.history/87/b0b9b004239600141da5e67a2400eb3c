@@ -1,0 +1,20 @@
+package implement;
+
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+import template.LoginInterface;
+
+public class Login extends UnicastRemoteObject implements LoginInterface {
+
+	public Login()
+	{
+		super();
+	}
+	@Override
+	public int loginCheck(String name, String pass) throws RemoteException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

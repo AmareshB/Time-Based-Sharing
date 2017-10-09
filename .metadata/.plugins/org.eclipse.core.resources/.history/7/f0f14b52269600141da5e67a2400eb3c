@@ -1,0 +1,26 @@
+package serverpack;
+
+import implement.Factory;
+import implement.Login;
+
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+
+public class Server {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       try {
+		Registry r=LocateRegistry.createRegistry(1902);
+		r.rebind("Factory", new Factory());
+		r.rebind("Login", new Login());
+		r.rebind("Create", new Create());
+	} catch (RemoteException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+       
+	}
+
+}

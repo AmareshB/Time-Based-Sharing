@@ -1,0 +1,38 @@
+package implement;
+
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import data.Databass;
+import template.LoginInterface;
+
+public class Login extends UnicastRemoteObject implements LoginInterface {
+
+	public Login() throws RemoteException
+	{
+		super();
+	}
+	@Override
+	public int loginCheck(String name, String pass) throws RemoteException {
+		// TODO Auto-generated method stub
+		try {
+			Connection con=Databass.getConnect();
+			PreparedStatement stm=con.prepareStatement("select * from user where name=? and password=?");
+			stm.setString(1, name);
+			stm.setString(2, pass);
+			ResultSet rs=stm.executeQuery();
+			if(rs.next())
+				return 1;
+			else
+				return 0;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return 0;
+	}
+
+}

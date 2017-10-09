@@ -1,0 +1,5 @@
+package implement;
+
+public class RMIInputStreamImpl implements RMIInputStreamInterface {
+
+}

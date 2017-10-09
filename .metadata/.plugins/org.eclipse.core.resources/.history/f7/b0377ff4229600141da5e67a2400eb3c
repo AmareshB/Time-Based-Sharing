@@ -1,0 +1,7 @@
+package implement;
+
+import template.LoginInterface;
+
+public class Login implements LoginInterface {
+
+}

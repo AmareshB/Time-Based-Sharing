@@ -1,0 +1,22 @@
+package implement;
+
+import java.io.OutputStream;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+import template.UploadInterface;
+
+public class Upload extends UnicastRemoteObject implements UploadInterface {
+
+	public Upload() throws RemoteException
+	{
+		super();
+	}
+	@Override
+	public OutputStream uploadFile(String name) throws RemoteException {
+		// TODO Auto-generated method stub
+		return new RMIOutputStream(new RMIOutputStreamImpl(new 
+			    FileOutputStream(new File("C:\\Users\\Bharath Babu\\Documents\\Project x\\Cloud\\"+name))));;
+	}
+
+}

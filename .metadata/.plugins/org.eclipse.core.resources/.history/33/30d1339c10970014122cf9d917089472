@@ -1,0 +1,24 @@
+package implement;
+
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+import template.LogoutInterface;
+
+public class Logout extends UnicastRemoteObject implements LogoutInterface {
+
+	public Logout() throws RemoteException
+	{
+		super();
+	}
+	@Override
+	public int logoutUser(String name) throws RemoteException {
+		// TODO Auto-generated method stub
+		PreparedStatement stm;
+		stm=con.prepareStatement("update user set stat=1 where name=?");
+		stm.setString(1, name);
+		stm.executeUpdate();
+		return 0;
+	}
+
+}

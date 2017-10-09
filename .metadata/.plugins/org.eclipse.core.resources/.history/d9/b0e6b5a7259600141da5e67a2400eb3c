@@ -1,0 +1,19 @@
+package implement;
+
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+import template.CreateInterface;
+
+public class Create extends UnicastRemoteObject implements CreateInterface {
+public Create() throws RemoteException
+{
+	super();
+}
+
+@Override
+public int createUser(String name, String pass) throws RemoteException {
+	// TODO Auto-generated method stub
+	return 0;
+}
+}

@@ -1,0 +1,8 @@
+package implement;
+
+import java.io.OutputStream;
+import java.io.Serializable;
+
+public class RMIOutputStream extends OutputStream implements Serializable {
+
+}

@@ -1,0 +1,7 @@
+package implement;
+
+import template.LogoutInterface;
+
+public class Logout extends UnicastRemoteObject implements LogoutInterface {
+
+}

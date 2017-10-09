@@ -1,0 +1,12 @@
+package serverpack;
+
+import java.rmi.registry.Registry;
+
+public class Server {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Registry r;
+	}
+
+}

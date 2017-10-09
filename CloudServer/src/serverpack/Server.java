@@ -1,14 +1,11 @@
 package serverpack;
 
 import implement.Create;
-import implement.Delete;
 import implement.Download;
 import implement.Factory;
-import implement.GetUser;
 import implement.Gui;
 import implement.Login;
 import implement.Logout;
-import implement.Share;
 import implement.Upload;
 
 import java.rmi.NotBoundException;
@@ -33,9 +30,6 @@ public class Server {
 		r.rebind("Upload", new Upload());
 		r.rebind("Download", new Download());
 		r.rebind("Gui", new Gui());
-		r.rebind("GetUser", new GetUser());
-		r.rebind("Share", new Share());
-		r.rebind("Delete", new Delete());
 		System.out.print("Server is Started(press 0 to stop):");
 		ch=in.nextInt();
 		if(ch==0)
@@ -47,9 +41,6 @@ public class Server {
 			r.unbind("Upload");
 			r.unbind("Download");
 			r.unbind("Gui");
-			r.unbind("GetUser");
-			r.unbind("Share");
-			r.unbind("Delete");
 			UnicastRemoteObject.unexportObject(r,true);
 			System.out.println("Stopped");
 			System.exit(0);

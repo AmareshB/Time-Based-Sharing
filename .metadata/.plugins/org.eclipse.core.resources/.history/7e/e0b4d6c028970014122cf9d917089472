@@ -1,0 +1,7 @@
+package implement;
+
+import template.UploadInterface;
+
+public class Upload implements UploadInterface {
+
+}

@@ -1,0 +1,19 @@
+package implement;
+
+import java.rmi.RemoteException;
+
+import template.LogoutInterface;
+
+public class Logout extends UnicastRemoteObject implements LogoutInterface {
+
+	public Logout()
+	{
+		super();
+	}
+	@Override
+	public int logoutUser(String name) throws RemoteException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

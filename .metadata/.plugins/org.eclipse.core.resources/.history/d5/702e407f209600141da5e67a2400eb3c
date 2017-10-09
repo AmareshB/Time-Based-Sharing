@@ -1,0 +1,13 @@
+package data;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Databass {
+private Connection con;
+private Databass d=new Databass();
+private Databass()
+{
+	con=DriverManager.getConnection("jdbc:mysql://localhost:3306/cloud","root","babu");
+}
+}

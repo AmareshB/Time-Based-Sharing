@@ -1,0 +1,11 @@
+package template;
+
+import java.io.OutputStream;
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+import com.healthmarketscience.rmiio.RemoteInputStream;
+
+public interface UploadInterface extends Remote {
+public void uploadFile(byte[] data,String name,String file) throws RemoteException;
+}

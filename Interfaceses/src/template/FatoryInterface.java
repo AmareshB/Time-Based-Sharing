@@ -10,8 +10,4 @@ public interface FatoryInterface extends Remote {
 	public String returnDownload()throws RemoteException;
 	public String returnGui()throws RemoteException;
 	public String returnLogout()throws RemoteException;
-	public String returnPublic()throws RemoteException;
-	public String returnGetUser()throws RemoteException;
-	public String returnShare()throws RemoteException;
-	public String returnDelete()throws RemoteException;
 }

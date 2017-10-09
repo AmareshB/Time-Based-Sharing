@@ -1,0 +1,7 @@
+package template;
+
+import java.rmi.Remote;
+
+public interface CreateInterface extends Remote {
+
+}

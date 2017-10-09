@@ -1,0 +1,20 @@
+package implement;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.Serializable;
+
+public class RMIInputStream extends InputStream implements Serializable {
+
+	 RMIInputStreamInterface in;
+	    
+	    public RMIInputStream(RMIInputStreamInterface in) {
+	        this.in = in;
+	    }
+	@Override
+	public int read() throws IOException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

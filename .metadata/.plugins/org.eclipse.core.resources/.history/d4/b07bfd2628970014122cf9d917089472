@@ -1,0 +1,27 @@
+package implement;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.rmi.RemoteException;
+
+public class RMIOutputStreamImpl implements RMIOutputStreamInterface {
+
+    private OutputStream out;
+    
+    public RMIOutputStreamImpl(OutputStream out) throws 
+            IOException {
+        this.out = out;
+    }
+	@Override
+	public void write(int b) throws IOException, RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void close() throws IOException, RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

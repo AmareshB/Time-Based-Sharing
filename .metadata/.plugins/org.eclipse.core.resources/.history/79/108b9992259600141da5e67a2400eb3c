@@ -1,0 +1,10 @@
+package implement;
+
+import template.CreateInterface;
+
+public class Create extends UnicastRemoteObject implements CreateInterface {
+public Create()
+{
+	super();
+}
+}

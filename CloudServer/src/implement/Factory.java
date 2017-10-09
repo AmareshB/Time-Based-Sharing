@@ -40,23 +40,4 @@ public class Factory extends UnicastRemoteObject implements FatoryInterface {
     public String returnLogout() throws RemoteException{
     	return "Logout";
     }
-    public String returnPublic()throws RemoteException{
-    	return "Public";
-    }
-	@Override
-	public String returnGetUser() throws RemoteException {
-		// TODO Auto-generated method stub
-		return "GetUser";
-	}
-	@Override
-	public String returnShare() throws RemoteException {
-		// TODO Auto-generated method stub
-		return "Share";
-	}
-	@Override
-	public String returnDelete() throws RemoteException {
-		// TODO Auto-generated method stub
-		return "Delete";
-	}
-	
 }
